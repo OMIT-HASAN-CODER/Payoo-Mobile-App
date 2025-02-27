@@ -32,7 +32,7 @@
                         <img class="w-8 mx-auto" src="assets/wallet1.png" alt="">
                         <h1 class="">Add Money</h1>
                     </div>
-                    <div id="cashout-btn" class="cursor-pointer box border border-black p-4 text-center rounded-lg">
+                    <div id="cash-out-btn" class="cursor-pointer box border border-black p-4 text-center rounded-lg">
                         <img class="w-8 mx-auto" src="assets/send1.png" alt="">
                         <h1>Cashout</h1>
                     </div>
@@ -81,16 +81,16 @@
                         <label class="label">
                           <span class="label-text">Amount to add</span>
                         </label>
-                        <input id="amount" type="number" placeholder="add amount" class="input input-bordered" required />
+                        <input id="addmoney-amount" type="number" placeholder="add amount" class="input input-bordered" required />
                       </div>
                       <div class="form-control">
                         <label class="label">
                           <span class="label-text">Pin</span>
                         </label>
-                        <input value="1234" id="pin" type="text" placeholder="your pin" class="input input-bordered" required />
+                        <input value="1234" id="addmoney-pin" type="text" placeholder="your pin" class="input input-bordered" required />
                       </div>
                       <div class="form-control mt-1">
-                        <button id="add-money" class="btn btn-primary text-white">Add money</button>
+                        <button id="addmoney-btn" class="btn btn-primary text-white">Add money</button>
                       </div>
                     </form>
                   </div>
@@ -115,16 +115,16 @@
                       <label class="label">
                         <span class="label-text">Amount to cashout</span>
                       </label>
-                      <input id="amount" type="number" placeholder="add amount" class="input input-bordered" required />
+                      <input id="cashout-amount" type="number" placeholder="add amount" class="input input-bordered" required />
                     </div>
                     <div class="form-control">
                       <label class="label">
                         <span class="label-text">Pin</span>
                       </label>
-                      <input value="1234" id="pin" type="text" placeholder="your pin" class="input input-bordered" required />
+                      <input value="1234" id="cashout-pin" type="text" placeholder="your pin" class="input input-bordered" required />
                     </div>
                     <div class="form-control mt-1">
-                      <button id="add-money" class="btn btn-primary text-white">Cashout</button>
+                      <button id="cashout-btn" class="btn btn-primary text-white">Cashout</button>
                     </div>
                   </form>
                 </div>
@@ -134,6 +134,7 @@
     </main>
     <script src="script/addmoney.js"></script>
     <script src="script/toggle.js"></script>
+    <script src="script/cashout.js"></script>
 </body>
 
 </html>
