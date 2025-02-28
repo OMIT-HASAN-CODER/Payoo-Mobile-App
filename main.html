@@ -48,7 +48,7 @@
                         <img class="w-8 mx-auto" src="assets/purse1.png" alt="">
                         <h1>Pay Bill</h1>
                     </div>
-                    <div class="cursor-pointer box border border-black p-4 text-center rounded-lg">
+                    <div id="transactions-btn" class="cursor-pointer box border border-black p-4 text-center rounded-lg">
                         <img class="w-8 mx-auto" src="assets/transaction1.png"">
                         <h1>Transactions</h1>
                     </div>
@@ -64,7 +64,7 @@
                   <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
                     <form class="card-body">
                         <legend>Select a bank</legend>
-                        <select class="select select-bordered w-full max-w-xs">
+                        <select id="all-bank" class="select select-bordered w-full max-w-xs">
                             <option disabled selected>Select Bank</option>
                             <option value="Bkash">Bkash</option>
                             <option value="Upay">Upay</option>
@@ -131,6 +131,12 @@
               </div>
             </div>
       </section>
+
+      <!-- transactions history -->
+       <section id="transaction-history" class="mt-5">
+        <h1 class="text-2xl font-bold text-red-500 text-center">Transaction History</h1>
+        <div id="transaction-container"></div>
+       </section>
     </main>
     <script src="script/utilities.js"></script>
     <script src="script/addmoney.js"></script>
